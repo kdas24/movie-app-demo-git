@@ -26,7 +26,7 @@ function App() {
         <div className="App">
             <div className="search-box">
                 <label>
-                    Search for any movies/shows:{" "}
+                    Search for recent movies/shows:{" "}
                 </label>
                 <input type="text" onChange=
                     {(e) => { setVideo(e.target.value) }} />
