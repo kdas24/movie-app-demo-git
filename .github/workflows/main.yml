@@ -57,4 +57,4 @@ jobs:
             docker pull $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
             docker stop react-app || true
             docker rm react-app || true
-            docker run -d --name react-app -p 80:80 $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+            docker run -d --name react-app -p 3000:3000 $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
